@@ -35,13 +35,10 @@ echo -e "\033[0m"
 
 echo -e "\033[35m"
 printf "Deleting the node"
-echo -e "\033[0m"
 
 for((sec=0; sec<4; sec++))
 do
-        echo "\033[35m"
         printf "."
-        echo "\033[0m"
         sleep 1
         if [ $sec -eq 0 ]; then
                 cd $HOME/aptos
