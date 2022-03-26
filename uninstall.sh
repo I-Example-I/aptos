@@ -48,7 +48,7 @@ do
                 rm -rf $HOME/aptos
         elif [ $sec -eq 3 ]; then
                 cd
-                rm aptos.sh aptos_identity.sh aptos_renew_seeds.sh 
+                rm aptos.sh
                 rm -rf $HOME/snap $HOME/pathfinder
         fi
 done
