@@ -29,24 +29,21 @@ echo -e ""
 echo -e "\033[0m"
 
 
-$a="Deleting the node"
-echo $a
+#$a="Deleting the node"
+#echo -e $a
+printf "Deleting the node"
 for((sec=0; sec<3; sec++))
 do
-        $a=$a+'.'
+        printf "."
         sleep 1
         if [ $sec -eq 0 ]; then
-                echo -e "1"
+                cd $HOME/aptos
         elif [ $sec -eq 1 ]; then
-                echo -e "2"
+                docker compose down
         elif [ $sec -eq 2 ]; then
-                echo -e "3"
+                rm -rf $HOME/aptos
         fi
 done
-
-#cd $HOME/aptos
-#docker compose down
-#rm -rf $HOME/aptos
 
 
 
