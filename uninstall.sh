@@ -42,7 +42,7 @@ do
         sleep 1
         if [ $sec -eq 0 ]; then
                 cd
-                rm aptos.sh aptos_identity.sh aptos_renew_seeds.sh 
+                rm aptos.sh
                 rm -rf $HOME/snap $HOME/pathfinder
         elif [ $sec -eq 1 ]; then
                 cd $HOME/aptos
