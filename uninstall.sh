@@ -40,11 +40,14 @@ do
         elif [ $sec -eq 2 ]; then
                 echo -e "2"
             fi
-        elif [ $sec -eq "3"]; then
+        elif [ $sec -eq 3]; then
                 echo -e "3"
             fi
 done
 
+#cd $HOME/aptos
+#docker compose down
+#rm -rf $HOME/aptos
 
 
 
