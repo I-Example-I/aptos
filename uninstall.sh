@@ -39,7 +39,9 @@ echo -e "\033[0m"
 
 for((sec=0; sec<3; sec++))
 do
+        echo -e "\033[35m"
         printf "."
+        echo -e "\033[0m"
         sleep 1
         if [ $sec -eq 0 ]; then
                 cd $HOME/aptos
