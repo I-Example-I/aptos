@@ -36,12 +36,15 @@ do
         sleep 1
         if [ $sec -eq 1 ]; then
                 echo -e "1"
+            fi
         elif [ $sec -eq 2 ]; then
                 echo -e "2"
+            fi
         elif [ $sec -eq "3"]; then
                 echo -e "3"
-        fi
+            fi
 done
+
 
 
 
