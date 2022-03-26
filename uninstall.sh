@@ -59,6 +59,3 @@ echo -e "The node was uninstalled successfully"
 echo -e "\033[0m"
 
 
-
-
-
