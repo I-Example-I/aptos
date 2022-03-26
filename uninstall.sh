@@ -36,20 +36,20 @@ echo -e "\033[0m"
 echo -e "\033[35m"
 printf "Deleting the node"
 
-for((sec=0; sec<4; sec++))
+for((sec=0; sec<3; sec++))
 do
         printf "."
         sleep 1
         if [ $sec -eq 0 ]; then
-                cd $HOME/aptos
-        elif [ $sec -eq 1 ]; then
-                docker compose down
-        elif [ $sec -eq 2 ]; then
-                rm -rf $HOME/aptos
-        elif [ $sec -eq 3 ]; then
                 cd
-                rm aptos.sh
+                rm aptos.sh aptos_identity.sh aptos_renew_seeds.sh 
                 rm -rf $HOME/snap $HOME/pathfinder
+        elif [ $sec -eq 1 ]; then
+                cd $HOME/aptos
+        elif [ $sec -eq 2 ]; then
+                echo -e ""
+                docker compose down
+                rm -rf $HOME/aptos
         fi
 done
 
