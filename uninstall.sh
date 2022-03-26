@@ -31,9 +31,12 @@ echo -e "\033[0m"
 
 #$a="Deleting the node"
 #echo -e $a
+
+
 echo -e "\033[35m"
 printf "Deleting the node"
 echo -e "\033[0m"
+
 for((sec=0; sec<3; sec++))
 do
         printf "."
@@ -46,6 +49,7 @@ do
                 rm -rf $HOME/aptos
         fi
 done
+
 
 echo -e "\033[35m"
 echo -e "The node was uninstalled successfully"
