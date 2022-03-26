@@ -43,10 +43,6 @@ do
         fi
 done
 
-#cd $HOME/aptos
-#docker compose down
-#rm -rf $HOME/aptos
-
 
 
 
