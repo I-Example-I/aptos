@@ -39,9 +39,9 @@ echo -e "\033[0m"
 
 for((sec=0; sec<4; sec++))
 do
-        echo -e "\033[35m"
+        echo "\033[35m"
         printf "."
-        echo -e "\033[0m"
+        echo "\033[0m"
         sleep 1
         if [ $sec -eq 0 ]; then
                 cd $HOME/aptos
@@ -52,7 +52,7 @@ do
         elif [ $sec -eq 3 ]; then
                 cd
                 rm aptos.sh aptos_identity.sh aptos_renew_seeds.sh 
-                rm -rf $HOME/pathfinder $HOME/snap
+                rm -rf $HOME/snap $HOME/pathfinder
         fi
 done
 
