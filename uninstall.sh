@@ -29,10 +29,11 @@ echo -e ""
 echo -e "\033[0m"
 
 
-printf "Deleting the node"
+$a="Deleting the node"
+echo $a
 for((sec=0; sec<3; sec++))
 do
-        printf "."
+        $a=$a+'.'
         sleep 1
         if [ $sec -eq 0 ]; then
                 echo -e "1"
