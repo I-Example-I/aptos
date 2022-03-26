@@ -34,11 +34,11 @@ for((sec=0; sec<3; sec++))
 do
         printf "."
         sleep 1
-        if [ $sec -eq 1 ]; then
+        if [ $sec -eq 0 ]; then
                 echo -e "1"
-        elif [ $sec -eq 2 ]; then
+        elif [ $sec -eq 1 ]; then
                 echo -e "2"
-        elif [ $sec -eq 3]; then
+        elif [ $sec -eq 2 ]; then
                 echo -e "3"
         fi
 done
